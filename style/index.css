@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'CaveatBold';
+    src: url('../assets/fonts/Caveat-Bold.ttf');
+}
+@font-face {
+    font-family: 'CaveatRegular';
+    src: url('../assets/fonts/Caveat-Regular.ttf');
+}
+
+body,
+html {
+    font-family: 'CaveatRegular';
+    font-size: 100%;
+}
