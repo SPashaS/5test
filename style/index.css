@@ -11,16 +11,35 @@ body,
 html {
     font-family: 'CaveatRegular';
     font-size: 100%;
-    background-color: bisque;
-    
+    background-color: rgb(223, 223, 223);
+    height: 100vh;
 }
 
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-
+    gap: 10px;
+    padding: 10px;
+    align-items: flex-start;
 }
-.box__image {
-    height: 33%;
+
+.box {
+    width: min-content;
+    background-color: blanchedalmond;
+}
+
+.box:nth-child(1) .box__image {
+    height: 250px;
+}
+
+.box:nth-child(2) .box__image {
+    height: 300px;
+}
+
+.box:nth-child(3) .box__image {
+    height: 180px;
+}
+
+.box:nth-child(4) .box__image {
+    height: 320px;
 }
