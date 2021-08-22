@@ -7,6 +7,11 @@
     src: url('../assets/fonts/Caveat-Regular.ttf');
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body,
 html {
     font-family: 'CaveatRegular';
@@ -20,26 +25,116 @@ html {
     display: flex;
     gap: 10px;
     padding: 10px;
-    align-items: flex-start;
+    position: relative;
+    align-items: start;
 }
 
 .box {
     width: min-content;
-    background-color: blanchedalmond;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    position: absolute;
 }
 
-.box:nth-child(1) .box__image {
+.box:nth-child(1) {
+    top:60px;
+    left:43%;
+    transform: rotate(10deg);
+}
+.box:nth-child(2) {
+    top:500px;
+    left:70%;
+    transform: rotate(5deg);
+}
+.box:nth-child(3) {
+    top:500px;
+    left:70%;
+    transform: rotate(-10deg);
+}
+.box:nth-child(4) {
+    top:100px;
+    left:65%;
+    transform: rotate(2deg);
+}
+.box:nth-child(5) {
+    top:400px;
+    left:50%;
+    transform: rotate(-3deg);
+}
+.box:nth-child(6) {
+    top:410px;
+    left:30%;
+    transform: rotate(14deg);
+}
+.box:nth-child(7) {
+    top:600px;
+    left:50%;
+    transform: rotate(2deg);
+
+}
+.box:nth-child(8) {
+    top:450px;
+    left:10%;
+    transform: rotate(-1deg);
+}
+.box:nth-child(9) {
+    top:140px;
+    left:50%;
+    transform: rotate(-5deg);
+}
+.box:nth-child(10) {
+    top:570px;
+    left:30%;
+    transform: rotate(-8deg);
+}
+.box:nth-child(11) {
+    top:400px;
+    left:20%;
+    transform: rotate(10deg);
+}
+.box:nth-child(12) {
+    top:100px;
+    left:15%;
+    transform: rotate(-4deg);
+}
+
+.box:nth-child(1) .box__image,
+.box:nth-child(5) .box__image,
+.box:nth-child(9) .box__image {
     height: 250px;
 }
 
-.box:nth-child(2) .box__image {
+.box:nth-child(2) .box__image,
+.box:nth-child(6) .box__image {
     height: 300px;
 }
 
-.box:nth-child(3) .box__image {
+.box:nth-child(3) .box__image,
+.box:nth-child(7) .box__image,
+.box:nth-child(11) .box__image {
     height: 180px;
 }
 
-.box:nth-child(4) .box__image {
+.box:nth-child(4) .box__image,
+.box:nth-child(8) .box__image {
     height: 320px;
+
+}.box:nth-child(10) .box__image {
+    height: 200px;
+}
+
+.box:nth-child(12) .box__image {
+    height: 280px;
+}
+
+.box__text {
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.box:hover {
+    z-index: 999;
+    transform: scale(1.1);
+    font-family: 'CaveatBold';
+    font-size: 1.5rem;
 }
