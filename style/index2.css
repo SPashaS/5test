@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.container {
+    width: 871px; 
+    height: 581px;
+    background-image: url('../assets/images/Football.jpg');
+    box-sizing: border-box;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+p {
+    font-size: 1.5rem;
+}
+.form {
+    width: 600px;
+    height: 581px;
+    float: left;
+    shape-outside: polygon(0% 0%, 64% 0%, 61% 14%, 59% 28%, 61% 41%, 65% 52%, 68% 63%, 74% 76%, 83% 71%, 92% 77%, 93% 92%, 87% 100%, 0% 100%);
+}
+.border {
+    width: 20px;
+    height: 581px;
+    float: right;
+    shape-outside: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
